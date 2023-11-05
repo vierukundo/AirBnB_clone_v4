@@ -2,8 +2,8 @@ $(document).ready(function() {
   const amenities = {}; // Initialize an empty object to store Amenity IDs and names
 
   $('li input[type="checkbox"]').change(function() {
-    let id = $(this).data('id'); // Corrected the data attribute access
-    let name = $(this).data('name'); // Corrected the data attribute access
+    let id = $(this).data('data-id'); // Corrected the data attribute access
+    let name = $(this).data('data-name'); // Corrected the data attribute access
 
     if (this.checked) {
       amenities[id] = name; // Add the Amenity ID and name to the amenities object
